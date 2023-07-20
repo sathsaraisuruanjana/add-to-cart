@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+
+
+    <div class="card">
+        <div id="app">
+            <div class="nav-bar"></div>
+            <div class="cart" >Cart({{cart.length}})</div>         
+               <product-display :premium ="premium" @add-to-cart="updateCart"></product-display>
+        </div> 
+    </div>
+    <script src="script.js"></script>
+        <script src="/components/ProductDisplay.js"></script>
+        <script>
+            const mountedApp = app.mount('#app')
+          </script>
+</body>
+</html>
